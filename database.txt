@@ -13,16 +13,12 @@ systemctl start mariadb.service
 #3. How to log in to the mysql.
 mysql -u root - p 
 
-<<<<<<< HEAD
-
-#6. Grat permissions to user on database. 
-GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
-=======
 #4. How to create database in mysql and MariaDB with Character set utf8.
 CREATE DATABASE maha DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 #5. How to Create user on MySql and Mariadb.
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
->>>>>>> 8634ff7d9785a06ac69ad58ceae7d68a8c60f953
+#6. Grat permissions to user on database.
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
