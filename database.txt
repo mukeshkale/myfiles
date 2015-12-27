@@ -5,3 +5,7 @@ sudo apt-get install mysql mysql-server
 #1 how to log in to the mysql
 mysql -u root - p 
 
+
+#6. Grat permissions to user on database. 
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+
