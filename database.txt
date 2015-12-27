@@ -1,7 +1,22 @@
 ##### MYSQL database Notes #######
-#1. How to install mysql on linux(ubuntu). 
+#1. How to install mysql on linux.. 
+#Ubuntu
 sudo apt-get install mysql mysql-server
+#Centos/Fedora
+yum -y install MariaDB MariaDB-server
 
-#1 how to log in to the mysql
+#2. How to start service on MariaDB
+service mariadb start
+#Centos7/RHEL7/Fedora
+systemctl start mariadb.service 
+
+#3. How to log in to the mysql.
 mysql -u root - p 
+
+#4. How to create database in mysql and MariaDB with Character set utf8.
+CREATE DATABASE maha DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+
+#5. How to Create user on MySql and Mariadb.
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
 
